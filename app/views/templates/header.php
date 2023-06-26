@@ -8,7 +8,8 @@
     <title>Halaman <?= $data['title']; ?></title>
 
     <!-- online -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- offline -->
     <!-- <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.min.css"> -->
 
@@ -30,23 +31,17 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/mahasiswa">Mahasiswa</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= BASEURL; ?>/about/page">Page</a>
-                    </li> -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About
                         </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?= BASEURL; ?>/about">About</a>
-                            <!-- <a class="dropdown-item" href="#">Another action</a> -->
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="<?= BASEURL; ?>/about/page">My Page</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="<?= BASEURL; ?>/about">About Me</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="<?= BASEURL; ?>/about/page">My Page</a></li>
+                        </ul>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled">Disabled</a>
